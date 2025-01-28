@@ -4,6 +4,7 @@ import os
 # Load the Abstracts.csv file
 abstracts_df = pd.read_csv('_data/Abstracts.csv')
 datasets_df = pd.read_csv('_data/Datasets.csv')
+rdc_type = "Federal Statistical Research Data Center"
 
 # Ensure the _projects directory exists
 os.makedirs('_projects', exist_ok=True)
@@ -17,6 +18,7 @@ for index, row in abstracts_df.iterrows():
         file.write(f"proj_id: \"{row['Proj ID']}\"\n")
         file.write(f"status: \"{row['Status']}\"\n")
         file.write(f"rdc: \"{row['RDC']}\"\n")
+        file.write(f"rdc_type: \"{ rdc_type }\"\n")
         file.write(f"start_year: \"{int(row['Start Year'])}\"\n")
 # Handle NaN values for end year
         end_year = row['End Year']
