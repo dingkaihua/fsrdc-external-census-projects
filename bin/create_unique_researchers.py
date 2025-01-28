@@ -28,8 +28,6 @@ for name in unique_names:
 
 new_df = pd.concat([new_df, pd.DataFrame(rows)], ignore_index=True)
 
-# Randomize the order of names
-new_df = new_df.sample(frac=1).reset_index(drop=True)
 
 
 # Save the new DataFrame to a CSV file
