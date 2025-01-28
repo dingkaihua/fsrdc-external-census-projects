@@ -17,10 +17,17 @@ for index, row in abstracts_df.iterrows():
         file.write(f"proj_id: \"{row['Proj ID']}\"\n")
         file.write(f"status: \"{row['Status']}\"\n")
         file.write(f"rdc: \"{row['RDC']}\"\n")
-        file.write(f"start_year: \"{row['Start Year']}\"\n")
-        file.write(f"end_year: \"{row['End Year']}\"\n")
+        file.write(f"start_year: \"{int(row['Start Year'])}\"\n")
+# Handle NaN values for end year
+        end_year = row['End Year']
+        if pd.isna(end_year):
+            file.write(f"end_year: \"\"\n")
+        else:
+            file.write(f"end_year: \"{int(end_year)}\"\n")
+
         file.write(f"pi: \"{row['PI']}\"\n")
         file.write(f"abstract: \"{row['Abstract']}\"\n")
+        file.write(f"layout: project\n")
         file.write('---\n\n')
 
 
