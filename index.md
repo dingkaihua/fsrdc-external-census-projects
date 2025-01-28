@@ -3,14 +3,14 @@ title:
 layout: withtable
 ---
 
-This list ....
+This list shows the names of researchers who have been involved with any one of the projects in the database. The `PI` column identifies the projects that they have head the Principal Investigator role on, whereas the `Researcher` column identifies the projects that they have been involved with as a researcher. 
 
 > Search the database for any keyword in any field.
 
 
 <table class="display">
   <!-- Proj ID,Status,Title,RDC,Start Year,End Year,PI,Researcher -->
-  {% for row in site.data.Researchers %}
+  {% for row in site.data.UniqueResearchers %}
     {% if forloop.first %}
     <thead>
     <tr>
@@ -27,9 +27,9 @@ This list ....
     {% endif %}
 
   <!-- manually constructing table -->
-  <!-- Proj ID,Status,Title,RDC,Start Year,End Year,PI,Researcher -->
+  <!-- Name,PI,Researcher -->
   <tr>
-    <td> {{ row["Proj ID"] }} </td>
+    <td> {{ row["Name"] }} </td>
     <td> {{ row["PI"] }} </td>
     <td> {{ row["Researcher"] }} </td>
   </tr>
