@@ -45,8 +45,8 @@ defaults:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# collections:
-#   query:
-#     output: true
+collections:
+  projects:
+    output: true
 
 
