@@ -1,0 +1,31 @@
+Data are current as of:,2024-06-25 00:00:00,Unnamed: 2,Unnamed: 3
+,,,
+All Metadata,,Datasets,
+One record per project,Project Records: 915,One record per project per dataset,Dataset Records: 8242 (Max Project: 58 )
+Column,Definition,Column,Definition
+Proj ID,Four-digit project identification number,Proj ID,Four-digit project identification number
+Status,Project status,Status,Project status
+Title,Project title,Title,Project title
+RDC,Research Data Center,RDC,Research Data Center
+Start Year,Year project started,Start Year,Year project started
+End Year,Year project ended (if applicable),End Year,Year project ended (if applicable)
+PI,Principal investigator,PI,Principal investigator
+Abstract,Scientific abstract for project,DataName,Names of dataseat requested for the project
+No. Datasets,Number of datasets requested for the project,DataCode,Codes of the datasets requested for the project
+DataName#,Names of the datasets requested by the project,,
+DataCode#,Codes of the datasets requested by the project,,
+No. Researchers,Number of active researchers on the project,,
+Researcher#,Names of active researchers on the project,,
+,,,
+Abstracts,,Researchers,
+One record per project,Project Records: 915,One record per project per researcher,Researcher Records: 2877 (Max per Project: 34 )
+Column,Definition,Column,Definition
+Proj ID,Four-digit project identification number,Proj ID,Four-digit project identification number
+Status,Project status,Status,Project status
+Title,Project title,Title,Project title
+RDC,Research Data Center,RDC,Research Data Center
+Start Year,Year project started,Start Year,Year project started
+End Year,Year project ended (if applicable),End Year,Year project ended (if applicable)
+PI,Principal investigator,PI,Principal investigator
+Abstract,Scientific abstract for project,Researcher,Names of the researchers on the project
+,,Note:,"135 projects have no researchers listed (other than the PI); these are largely older, completed projects for which researcher data were not available in our management system"
