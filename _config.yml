@@ -18,7 +18,7 @@ title: Census Bureau external projects
 description: >- # this means to ignore newlines until "baseurl:"
   These pages provide information on Census Bureau external projects
 disclaimer: Not an official site.
-logo: https://www.census.gov/etc.clientlibs/census/clientlibs/census-pattern-library/resources/images/USCENSUS_IDENTITY_SOLO_BLACK_1.5in_R_no_padding.svg
+logo: USCENSUS_IDENTITY_SOLO_BLACK_1.5in_R_no_padding.svg
 
 # Build settings
 markdown: kramdown
