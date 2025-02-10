@@ -6,3 +6,5 @@ Currently metadata is only provided for projects that solely use Census Bureau d
 The latest versions of the project metadata and research outputs workbooks can also be downloaded from https://www.census.gov/about/adrm/fsrdc/about/ongoing-projects.html. 
 
 Previous versions can be found on via the Tags page at https://github.com/uscensusbureau/fsrdc-external-census-projects/tags.
+
+> NOTE: The Census Bureau's Github has either disappeared or been made private. The last snapshot on the [Internet Archive](https://web.archive.org/web/20250130122218/https://www.census.gov/about/adrm/fsrdc/about/ongoing-projects.html) has no more recent information than the information in this forked repository (though the website claims to have publication information as of January 27, 2025, which is not supported by the linked Excel file's metadata).
