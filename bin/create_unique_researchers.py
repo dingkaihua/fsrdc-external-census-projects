@@ -33,3 +33,29 @@ new_df = pd.concat([new_df, pd.DataFrame(rows)], ignore_index=True)
 # Save the new DataFrame to a CSV file
 new_df.to_csv('_data/UniqueResearchers.csv', index=False)
 print("Saved unique researchers to _data/UniqueResearchers.csv")
+
+# Save the summary statistics in a CSV file. Update the row if a file exists, otherwise create a new file.
+
+summary_df = pd.DataFrame({
+    'Total Researchers': [len(unique_names)],
+    'Total Projects': [len(researcher_df['Proj ID'].unique())]
+})
+
+# Check if the summary file exists
+
+try:
+    summary_df_existing = pd.read_csv('_data/summary.csv')
+    # Update the existing file
+    for col in summary_df.columns:
+        if col not in summary_df_existing.columns:
+            summary_df_existing[col] = summary_df[col]
+        else:
+            # Update existing columns
+            summary_df_existing[col].update(summary_df[col])
+    summary_df_existing.to_csv('_data/summary.csv', index=False)
+    print("Updated summary statistics in _data/summary.csv")
+except FileNotFoundError:
+    # Create a new file
+    summary_df.to_csv('_data/summary.csv', index=False)
+    print("Created summary statistics file _data/summary.csv")
+
