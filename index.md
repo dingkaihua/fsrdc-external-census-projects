@@ -7,13 +7,14 @@ This list shows the names of researchers who have been involved with any one of 
 
 **Summary statistics**
 
-{% for row in site.data.summary %}
 <ul>
-  {% for key, value in row %}
-    <li><strong>{{ key }}:</strong> {{ value }}</li>
-  {% endfor %}
-</ul>
+{% for row in site.data.summary %}
+  <li><strong>Earliest start date:</strong> {{ row["Earliest start date"] }}</li>
+  <li><strong>Latest start date:</strong> {{ row["Latest start date"] }}</li>
+  <li><strong>Total Researchers:</strong> {{ row["Total Researchers"] }}</li>
+  <li><strong>Total Projects:</strong> {{ row["Total Projects"] }}</li>
 {% endfor %}
+</ul>
 
     
 
