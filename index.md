@@ -5,12 +5,16 @@ layout: withtable
 
 This list shows the names of researchers who have been involved with any one of the projects in the database. The `PI` column identifies the projects that they have head the Principal Investigator role on, whereas the `Researcher` column identifies the projects that they have been involved with as a researcher. 
 
-Summary statistics:
+**Summary statistics**
 
-- earliest project: 
-- newest project:
-- total number of projects
-- total number of researchers
+{% for row in site.data.summary %}
+<ul>
+  {% for key, value in row %}
+    <li><strong>{{ key }}:</strong> {{ value }}</li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
     
 
 
